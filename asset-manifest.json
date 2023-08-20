@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sweta134/Contact-Managemen-App.git/static/css/main.2fe49685.css",
+    "main.js": "/sweta134/Contact-Managemen-App.git/static/js/main.5412c6a2.js",
+    "index.html": "/sweta134/Contact-Managemen-App.git/index.html",
+    "main.2fe49685.css.map": "/sweta134/Contact-Managemen-App.git/static/css/main.2fe49685.css.map",
+    "main.5412c6a2.js.map": "/sweta134/Contact-Managemen-App.git/static/js/main.5412c6a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fe49685.css",
+    "static/js/main.5412c6a2.js"
+  ]
+}
