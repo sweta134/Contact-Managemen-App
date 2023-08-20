@@ -1,46 +1,88 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Contact Management App with Charts and Maps
 
-## Available Scripts
+This is a contact management app built using ReactJS, TypeScript, TailwindCSS, React Router v6, React Query (TanstackQuery), and Redux. The app allows you to manage contacts, view COVID-19 data using interactive charts and maps.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Add, edit, and delete contacts.
+- View list of contacts with contact details.
+- Interactive charts displaying COVID-19 cases fluctuations.
+- React Leaflet map with markers indicating COVID-19 data for different countries.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## APIs Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- World wide data of cases: `https://disease.sh/v3/covid-19/all`
+- Country-specific data of cases: `https://disease.sh/v3/covid-19/countries`
+- Graph data for cases with date: `https://disease.sh/v3/covid-19/historical/all?lastdays=all`
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sweta134/Contact-Managemen-App.git
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run the app locally:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deploying to Vercel
 
-### `npm run eject`
+1. Install Vercel CLI (if not installed):
+   ```bash
+   npm install -g vercel
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Build the app:
+   ```bash
+   npm run build
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Deploy to Vercel:
+   ```bash
+   vercel
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Deploying to GitHub Pages
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Create a new GitHub repository for your app.
 
-## Learn More
+2. Update the `package.json` file with the following information:
+   ```json
+   "homepage": "https://github.com/sweta134/Contact-Managemen-App.git",
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install the GitHub Pages package:
+   ```bash
+   npm install gh-pages --save-dev
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Add the following scripts to `package.json`:
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
+   }
+   ```
+
+5. Deploy the app to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+
+6. Go to your GitHub repository settings and set the GitHub Pages source to the `gh-pages` branch.
+
+7. Your app will be accessible at `https://github.com/sweta134/Contact-Managemen-App.git`.
+
+## Author
+
+Sweta Upadhyay
